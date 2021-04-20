@@ -1,0 +1,168 @@
+type Country @model{
+  id: ID!
+  createAt: AWSDateTime
+  createAtTS: AWSTimestamp
+  name: String
+  iso31661a2: String
+  iso31661a3: String
+  iso31661n: Int
+  coordinates: [Float]
+  continent: String
+  flagIcon: String
+  flagSvg: String
+  domain: [String]
+  tzName: String
+  geoJson: AWSJSON
+  landlocked: Boolean
+  borders: [String]
+  area: Int
+  demonyms: AWSJSON
+  dialCode: [String]
+  wikiLink: AWSURL
+  icaoArpt: String
+  icaoTail: String
+  e164: String
+  ioc: String
+  e212: String
+  natoa3: String
+  natoa2: String
+  locMarc: String
+  ituMid: String
+  itu3a: String
+  ituPreffix: String
+  fips: String
+  plate: String
+  gs1: String
+  undp: String
+  wmo: String
+  countryWxRH: [WxReportHistory] @connection(keyName: "bycountry", fields: ["id"])
+  countryWxR: [WxReport] @connection(keyName: "bycountry", fields: ["id"])
+  countryArpt: [Airport] @connection(keyName: "bycountry", fields: ["id"])
+}
+
+type Airport @model @key(name: "bycountry", fields: ["countryID"])  {
+  id: ID!
+  createAt: AWSDateTime
+  createAtTS: AWSTimestamp
+  iso31661a2: String
+  icao: String
+  iata: String
+  faa: String
+  name: String
+  city: String
+  state: String
+  elevation: Int
+  tz_name: String
+  coordinates: [Float]
+  arptWxRH: [WxReportHistory] @connection(keyName: "byairport", fields: ["id"])
+  arptWxR: [WxReport] @connection(keyName: "byairport", fields: ["id"])
+  countryID: ID!
+}
+
+type WxReportHistory @model @key(name: "bycountry", fields: ["countryID"]) @key(name: "byairport", fields: ["airportID"])  {
+  id: ID!
+  createAt: AWSDateTime!
+  createAtTS: AWSTimestamp
+  isoDate: AWSDateTime
+  tsDate: AWSTimestamp
+  countryIso31661a2: String
+  icao: String
+  faa: String
+  reportType: ReportType
+  raw: String
+  countryID: ID!
+  airportID: ID!
+}
+
+type WxReport @model @key(name: "bycountry", fields: ["countryID"]) @key(name: "byairport", fields: ["airportID"])  {
+  id: ID!
+  createAt: AWSDateTime!
+  createAtTS: AWSTimestamp
+  isoDate: AWSDateTime!
+  tsDate: AWSTimestamp
+  ttl: AWSTimestamp
+  countryIso31661a2: String
+  arptCode: ArptCode
+  reportType: ReportType
+  raw: String
+  countryID: ID!
+  airportID: ID!
+}
+
+enum ArptCode {
+  ICAO
+  IATA
+  FAA
+}
+
+enum ReportType {
+  METAR
+  TAF
+  SIGMET
+  TC
+  ICING
+  WINDS
+}
+
+enum Layover {
+  FALSE
+  DOMESTIC
+  INTERNATIONAL
+}
+ 
+ #ID: YYYYMMDDFLTNFLTFROMTO
+ #RELATIONSHIPS: PILOT-DUTY-COUNTRY(from+to)-AIRPORT(from+to)-COMPANY-AC/REG(tenemos acceso tambien al modelo)
+type PrivateLogbook @model  {
+  id: ID!
+  createAt: AWSDateTime
+  createAtTS: AWSTimestamp
+  fltDate: AWSDateTime
+  code: String
+  nflt: String
+  dep: String
+  arr: String
+  #acregistration: String
+  dhd: Boolean
+  augmented: Boolean
+  training: Boolean
+  dBlockTime: Float
+  hBlockTime: String
+  fCrew: [ID]
+  cCrew: [ID]
+  
+  # app+crew+landings+times.... en JSON o fuera??
+}
+
+# RELATIONSHIPS: company (actual) - country (of residence + birth if different)
+type Pilot @model  {
+  id: ID!
+  createAt: AWSDateTime
+  createAtTS: AWSTimestamp
+  fullName: String
+  name: String
+  middleName: String
+  lastName: String
+  dob: AWSDateTime
+  #email: {'type':'','address':'','private':True} passport+docs+estudios/trabajos(otra tabla para luego hacer el)
+}
+
+# Notams
+type NotamQ23 @model {
+  id: ID!
+  category: String
+  code: String
+  description: String
+  level: String
+  icon: String
+}
+type NotamQ45 @model  {
+  id: ID!
+  code: String
+  description: String
+}
+
+type IcaoAbbreviationsCodes @model  {
+  id: ID!
+  code: String
+  description: String
+}

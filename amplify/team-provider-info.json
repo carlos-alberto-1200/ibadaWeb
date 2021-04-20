@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-icircle-dev-231439-authRole",
+      "UnauthRoleArn": "arn:aws:iam::005835738238:role/amplify-icircle-dev-231439-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::005835738238:role/amplify-icircle-dev-231439-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-icircle-dev-231439-deployment",
+      "UnauthRoleName": "amplify-icircle-dev-231439-unauthRole",
+      "StackName": "amplify-icircle-dev-231439",
+      "StackId": "arn:aws:cloudformation:us-east-1:005835738238:stack/amplify-icircle-dev-231439/faa29970-7bd6-11eb-b267-0e880f83ff7f",
+      "AmplifyAppId": "d2ixz0q6zh9til"
+    },
+    "categories": {
+      "auth": {
+        "icircle5481d50e": {}
+      },
+      "function": {
+        "kmsGenerate": {
+          "deploymentBucketName": "amplify-icircle-dev-231439-deployment",
+          "s3Key": "amplify-builds/kmsGenerate-76485466735365642b7a-build.zip"
+        }
+      }
+    }
+  }
+}
