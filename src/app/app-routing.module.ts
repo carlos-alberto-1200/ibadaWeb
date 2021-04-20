@@ -4,7 +4,7 @@ import { NewSignComponent } from './security/new-sign/new-sign.component';
 
 const routes: Routes = [
   {
-    path: 'sign',
+    path: 'sign/:user',
     component: NewSignComponent, // this is the component with the <router-outlet> in the template
   },
 ];
