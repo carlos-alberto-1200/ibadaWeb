@@ -1,0 +1,676 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateCountry {
+  onCreateCountry {
+    id
+    createAt
+    createAtTS
+    name
+    iso31661a2
+    iso31661a3
+    iso31661n
+    coordinates
+    continent
+    flagIcon
+    flagSvg
+    domain
+    tzName
+    geoJson
+    landlocked
+    borders
+    area
+    demonyms
+    dialCode
+    wikiLink
+    icaoArpt
+    icaoTail
+    e164
+    ioc
+    e212
+    natoa3
+    natoa2
+    locMarc
+    ituMid
+    itu3a
+    ituPreffix
+    fips
+    plate
+    gs1
+    undp
+    wmo
+    countryWxRH {
+      nextToken
+      startedAt
+    }
+    countryWxR {
+      nextToken
+      startedAt
+    }
+    countryArpt {
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateCountry {
+  onUpdateCountry {
+    id
+    createAt
+    createAtTS
+    name
+    iso31661a2
+    iso31661a3
+    iso31661n
+    coordinates
+    continent
+    flagIcon
+    flagSvg
+    domain
+    tzName
+    geoJson
+    landlocked
+    borders
+    area
+    demonyms
+    dialCode
+    wikiLink
+    icaoArpt
+    icaoTail
+    e164
+    ioc
+    e212
+    natoa3
+    natoa2
+    locMarc
+    ituMid
+    itu3a
+    ituPreffix
+    fips
+    plate
+    gs1
+    undp
+    wmo
+    countryWxRH {
+      nextToken
+      startedAt
+    }
+    countryWxR {
+      nextToken
+      startedAt
+    }
+    countryArpt {
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteCountry {
+  onDeleteCountry {
+    id
+    createAt
+    createAtTS
+    name
+    iso31661a2
+    iso31661a3
+    iso31661n
+    coordinates
+    continent
+    flagIcon
+    flagSvg
+    domain
+    tzName
+    geoJson
+    landlocked
+    borders
+    area
+    demonyms
+    dialCode
+    wikiLink
+    icaoArpt
+    icaoTail
+    e164
+    ioc
+    e212
+    natoa3
+    natoa2
+    locMarc
+    ituMid
+    itu3a
+    ituPreffix
+    fips
+    plate
+    gs1
+    undp
+    wmo
+    countryWxRH {
+      nextToken
+      startedAt
+    }
+    countryWxR {
+      nextToken
+      startedAt
+    }
+    countryArpt {
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateAirport {
+  onCreateAirport {
+    id
+    createAt
+    createAtTS
+    iso31661a2
+    icao
+    iata
+    faa
+    name
+    city
+    state
+    elevation
+    tz_name
+    coordinates
+    arptWxRH {
+      nextToken
+      startedAt
+    }
+    arptWxR {
+      nextToken
+      startedAt
+    }
+    countryID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateAirport {
+  onUpdateAirport {
+    id
+    createAt
+    createAtTS
+    iso31661a2
+    icao
+    iata
+    faa
+    name
+    city
+    state
+    elevation
+    tz_name
+    coordinates
+    arptWxRH {
+      nextToken
+      startedAt
+    }
+    arptWxR {
+      nextToken
+      startedAt
+    }
+    countryID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteAirport {
+  onDeleteAirport {
+    id
+    createAt
+    createAtTS
+    iso31661a2
+    icao
+    iata
+    faa
+    name
+    city
+    state
+    elevation
+    tz_name
+    coordinates
+    arptWxRH {
+      nextToken
+      startedAt
+    }
+    arptWxR {
+      nextToken
+      startedAt
+    }
+    countryID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateWxReportHistory {
+  onCreateWxReportHistory {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    countryIso31661a2
+    icao
+    faa
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateWxReportHistory {
+  onUpdateWxReportHistory {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    countryIso31661a2
+    icao
+    faa
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteWxReportHistory {
+  onDeleteWxReportHistory {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    countryIso31661a2
+    icao
+    faa
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateWxReport {
+  onCreateWxReport {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    ttl
+    countryIso31661a2
+    arptCode
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateWxReport {
+  onUpdateWxReport {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    ttl
+    countryIso31661a2
+    arptCode
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteWxReport {
+  onDeleteWxReport {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    ttl
+    countryIso31661a2
+    arptCode
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreatePrivateLogbook {
+  onCreatePrivateLogbook {
+    id
+    createAt
+    createAtTS
+    fltDate
+    code
+    nflt
+    dep
+    arr
+    dhd
+    augmented
+    training
+    dBlockTime
+    hBlockTime
+    fCrew
+    cCrew
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePrivateLogbook {
+  onUpdatePrivateLogbook {
+    id
+    createAt
+    createAtTS
+    fltDate
+    code
+    nflt
+    dep
+    arr
+    dhd
+    augmented
+    training
+    dBlockTime
+    hBlockTime
+    fCrew
+    cCrew
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePrivateLogbook {
+  onDeletePrivateLogbook {
+    id
+    createAt
+    createAtTS
+    fltDate
+    code
+    nflt
+    dep
+    arr
+    dhd
+    augmented
+    training
+    dBlockTime
+    hBlockTime
+    fCrew
+    cCrew
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreatePilot {
+  onCreatePilot {
+    id
+    createAt
+    createAtTS
+    fullName
+    name
+    middleName
+    lastName
+    dob
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePilot {
+  onUpdatePilot {
+    id
+    createAt
+    createAtTS
+    fullName
+    name
+    middleName
+    lastName
+    dob
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePilot {
+  onDeletePilot {
+    id
+    createAt
+    createAtTS
+    fullName
+    name
+    middleName
+    lastName
+    dob
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateNotamQ23 {
+  onCreateNotamQ23 {
+    id
+    category
+    code
+    description
+    level
+    icon
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateNotamQ23 {
+  onUpdateNotamQ23 {
+    id
+    category
+    code
+    description
+    level
+    icon
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteNotamQ23 {
+  onDeleteNotamQ23 {
+    id
+    category
+    code
+    description
+    level
+    icon
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateNotamQ45 {
+  onCreateNotamQ45 {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateNotamQ45 {
+  onUpdateNotamQ45 {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteNotamQ45 {
+  onDeleteNotamQ45 {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateIcaoAbbreviationsCodes {
+  onCreateIcaoAbbreviationsCodes {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateIcaoAbbreviationsCodes {
+  onUpdateIcaoAbbreviationsCodes {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteIcaoAbbreviationsCodes {
+  onDeleteIcaoAbbreviationsCodes {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    nickname
+    firstName
+    lastName
+    idPublic
+    idPrivate
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    nickname
+    firstName
+    lastName
+    idPublic
+    idPrivate
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    nickname
+    firstName
+    lastName
+    idPublic
+    idPrivate
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

@@ -181,3 +181,14 @@ export declare class IcaoAbbreviationsCodes {
   constructor(init: ModelInit<IcaoAbbreviationsCodes>);
   static copyOf(source: IcaoAbbreviationsCodes, mutator: (draft: MutableModel<IcaoAbbreviationsCodes>) => MutableModel<IcaoAbbreviationsCodes> | void): IcaoAbbreviationsCodes;
 }
+
+export declare class User {
+  readonly id: string;
+  readonly nickname?: string;
+  readonly firstName?: string;
+  readonly lastName?: string;
+  readonly idPublic?: string;
+  readonly idPrivate?: string;
+  constructor(init: ModelInit<User>);
+  static copyOf(source: User, mutator: (draft: MutableModel<User>) => MutableModel<User> | void): User;
+}

@@ -1,4 +1,17 @@
 {
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-icircle-test-42244-authRole",
+      "UnauthRoleArn": "arn:aws:iam::005835738238:role/amplify-icircle-test-42244-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::005835738238:role/amplify-icircle-test-42244-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-icircle-test-42244-deployment",
+      "UnauthRoleName": "amplify-icircle-test-42244-unauthRole",
+      "StackName": "amplify-icircle-test-42244",
+      "StackId": "arn:aws:cloudformation:us-east-1:005835738238:stack/amplify-icircle-test-42244/38948a60-a259-11eb-9ec8-0e7b928af6d7",
+      "AmplifyAppId": "d2ixz0q6zh9til"
+    }
+  },
   "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-icircle-dev-231439-authRole",
@@ -14,12 +27,6 @@
     "categories": {
       "auth": {
         "icircle5481d50e": {}
-      },
-      "function": {
-        "kmsGenerate": {
-          "deploymentBucketName": "amplify-icircle-dev-231439-deployment",
-          "s3Key": "amplify-builds/kmsGenerate-76485466735365642b7a-build.zip"
-        }
       }
     }
   }

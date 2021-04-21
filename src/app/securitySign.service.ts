@@ -1,5 +1,14 @@
 import { Injectable } from '@angular/core';
 import * as forge from 'node-forge';
+import { User } from 'src/models';
+import Amplify from "@aws-amplify/core";
+import { DataStore } from "@aws-amplify/datastore";
+import awsExports from "./../aws-exports";
+
+Amplify.configure(awsExports);
+DataStore.configure(awsExports);
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,10 +21,18 @@ export class SecuritySignService {
   }
   messages: string[] = [];
 
-  add(message: string) {
+  async add(message: string) {
     console.log("message: ", message);
 
     this.messages.push(message);
+
+    
+    await DataStore.save(
+      new User({
+        nickname: message
+      })
+    );
+
 
     try {
       // generate a keypair

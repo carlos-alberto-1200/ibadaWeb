@@ -23,7 +23,7 @@ const Layover = {
   "INTERNATIONAL": "INTERNATIONAL"
 };
 
-const { Country, WxReportHistory, WxReport, Airport, PrivateLogbook, Pilot, NotamQ23, NotamQ45, IcaoAbbreviationsCodes } = initSchema(schema);
+const { Country, WxReportHistory, WxReport, Airport, PrivateLogbook, Pilot, NotamQ23, NotamQ45, IcaoAbbreviationsCodes, User } = initSchema(schema);
 
 export {
   Country,
@@ -35,6 +35,7 @@ export {
   NotamQ23,
   NotamQ45,
   IcaoAbbreviationsCodes,
+  User,
   ReportType,
   ArptCode,
   Layover
