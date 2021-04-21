@@ -17,19 +17,6 @@
       }
     }
   },
-  "auth": {
-    "icircle5481d50e": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false
-    }
-  },
-  "function": {
-    "kmsGenerate": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  }
+  "auth": {},
+  "function": {}
 }

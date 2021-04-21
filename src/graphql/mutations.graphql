@@ -1,0 +1,1057 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateCountry(
+  $input: CreateCountryInput!
+  $condition: ModelCountryConditionInput
+) {
+  createCountry(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    name
+    iso31661a2
+    iso31661a3
+    iso31661n
+    coordinates
+    continent
+    flagIcon
+    flagSvg
+    domain
+    tzName
+    geoJson
+    landlocked
+    borders
+    area
+    demonyms
+    dialCode
+    wikiLink
+    icaoArpt
+    icaoTail
+    e164
+    ioc
+    e212
+    natoa3
+    natoa2
+    locMarc
+    ituMid
+    itu3a
+    ituPreffix
+    fips
+    plate
+    gs1
+    undp
+    wmo
+    countryWxRH {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        countryIso31661a2
+        icao
+        faa
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryWxR {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        ttl
+        countryIso31661a2
+        arptCode
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryArpt {
+      items {
+        id
+        createAt
+        createAtTS
+        iso31661a2
+        icao
+        iata
+        faa
+        name
+        city
+        state
+        elevation
+        tz_name
+        coordinates
+        countryID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateCountry(
+  $input: UpdateCountryInput!
+  $condition: ModelCountryConditionInput
+) {
+  updateCountry(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    name
+    iso31661a2
+    iso31661a3
+    iso31661n
+    coordinates
+    continent
+    flagIcon
+    flagSvg
+    domain
+    tzName
+    geoJson
+    landlocked
+    borders
+    area
+    demonyms
+    dialCode
+    wikiLink
+    icaoArpt
+    icaoTail
+    e164
+    ioc
+    e212
+    natoa3
+    natoa2
+    locMarc
+    ituMid
+    itu3a
+    ituPreffix
+    fips
+    plate
+    gs1
+    undp
+    wmo
+    countryWxRH {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        countryIso31661a2
+        icao
+        faa
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryWxR {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        ttl
+        countryIso31661a2
+        arptCode
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryArpt {
+      items {
+        id
+        createAt
+        createAtTS
+        iso31661a2
+        icao
+        iata
+        faa
+        name
+        city
+        state
+        elevation
+        tz_name
+        coordinates
+        countryID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteCountry(
+  $input: DeleteCountryInput!
+  $condition: ModelCountryConditionInput
+) {
+  deleteCountry(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    name
+    iso31661a2
+    iso31661a3
+    iso31661n
+    coordinates
+    continent
+    flagIcon
+    flagSvg
+    domain
+    tzName
+    geoJson
+    landlocked
+    borders
+    area
+    demonyms
+    dialCode
+    wikiLink
+    icaoArpt
+    icaoTail
+    e164
+    ioc
+    e212
+    natoa3
+    natoa2
+    locMarc
+    ituMid
+    itu3a
+    ituPreffix
+    fips
+    plate
+    gs1
+    undp
+    wmo
+    countryWxRH {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        countryIso31661a2
+        icao
+        faa
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryWxR {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        ttl
+        countryIso31661a2
+        arptCode
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryArpt {
+      items {
+        id
+        createAt
+        createAtTS
+        iso31661a2
+        icao
+        iata
+        faa
+        name
+        city
+        state
+        elevation
+        tz_name
+        coordinates
+        countryID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateAirport(
+  $input: CreateAirportInput!
+  $condition: ModelAirportConditionInput
+) {
+  createAirport(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    iso31661a2
+    icao
+    iata
+    faa
+    name
+    city
+    state
+    elevation
+    tz_name
+    coordinates
+    arptWxRH {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        countryIso31661a2
+        icao
+        faa
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    arptWxR {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        ttl
+        countryIso31661a2
+        arptCode
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateAirport(
+  $input: UpdateAirportInput!
+  $condition: ModelAirportConditionInput
+) {
+  updateAirport(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    iso31661a2
+    icao
+    iata
+    faa
+    name
+    city
+    state
+    elevation
+    tz_name
+    coordinates
+    arptWxRH {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        countryIso31661a2
+        icao
+        faa
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    arptWxR {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        ttl
+        countryIso31661a2
+        arptCode
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteAirport(
+  $input: DeleteAirportInput!
+  $condition: ModelAirportConditionInput
+) {
+  deleteAirport(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    iso31661a2
+    icao
+    iata
+    faa
+    name
+    city
+    state
+    elevation
+    tz_name
+    coordinates
+    arptWxRH {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        countryIso31661a2
+        icao
+        faa
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    arptWxR {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        ttl
+        countryIso31661a2
+        arptCode
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateWxReportHistory(
+  $input: CreateWxReportHistoryInput!
+  $condition: ModelWxReportHistoryConditionInput
+) {
+  createWxReportHistory(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    countryIso31661a2
+    icao
+    faa
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateWxReportHistory(
+  $input: UpdateWxReportHistoryInput!
+  $condition: ModelWxReportHistoryConditionInput
+) {
+  updateWxReportHistory(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    countryIso31661a2
+    icao
+    faa
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteWxReportHistory(
+  $input: DeleteWxReportHistoryInput!
+  $condition: ModelWxReportHistoryConditionInput
+) {
+  deleteWxReportHistory(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    countryIso31661a2
+    icao
+    faa
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateWxReport(
+  $input: CreateWxReportInput!
+  $condition: ModelWxReportConditionInput
+) {
+  createWxReport(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    ttl
+    countryIso31661a2
+    arptCode
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateWxReport(
+  $input: UpdateWxReportInput!
+  $condition: ModelWxReportConditionInput
+) {
+  updateWxReport(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    ttl
+    countryIso31661a2
+    arptCode
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteWxReport(
+  $input: DeleteWxReportInput!
+  $condition: ModelWxReportConditionInput
+) {
+  deleteWxReport(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    ttl
+    countryIso31661a2
+    arptCode
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreatePrivateLogbook(
+  $input: CreatePrivateLogbookInput!
+  $condition: ModelPrivateLogbookConditionInput
+) {
+  createPrivateLogbook(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    fltDate
+    code
+    nflt
+    dep
+    arr
+    dhd
+    augmented
+    training
+    dBlockTime
+    hBlockTime
+    fCrew
+    cCrew
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdatePrivateLogbook(
+  $input: UpdatePrivateLogbookInput!
+  $condition: ModelPrivateLogbookConditionInput
+) {
+  updatePrivateLogbook(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    fltDate
+    code
+    nflt
+    dep
+    arr
+    dhd
+    augmented
+    training
+    dBlockTime
+    hBlockTime
+    fCrew
+    cCrew
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeletePrivateLogbook(
+  $input: DeletePrivateLogbookInput!
+  $condition: ModelPrivateLogbookConditionInput
+) {
+  deletePrivateLogbook(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    fltDate
+    code
+    nflt
+    dep
+    arr
+    dhd
+    augmented
+    training
+    dBlockTime
+    hBlockTime
+    fCrew
+    cCrew
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreatePilot(
+  $input: CreatePilotInput!
+  $condition: ModelPilotConditionInput
+) {
+  createPilot(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    fullName
+    name
+    middleName
+    lastName
+    dob
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdatePilot(
+  $input: UpdatePilotInput!
+  $condition: ModelPilotConditionInput
+) {
+  updatePilot(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    fullName
+    name
+    middleName
+    lastName
+    dob
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeletePilot(
+  $input: DeletePilotInput!
+  $condition: ModelPilotConditionInput
+) {
+  deletePilot(input: $input, condition: $condition) {
+    id
+    createAt
+    createAtTS
+    fullName
+    name
+    middleName
+    lastName
+    dob
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateNotamQ23(
+  $input: CreateNotamQ23Input!
+  $condition: ModelNotamQ23ConditionInput
+) {
+  createNotamQ23(input: $input, condition: $condition) {
+    id
+    category
+    code
+    description
+    level
+    icon
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateNotamQ23(
+  $input: UpdateNotamQ23Input!
+  $condition: ModelNotamQ23ConditionInput
+) {
+  updateNotamQ23(input: $input, condition: $condition) {
+    id
+    category
+    code
+    description
+    level
+    icon
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteNotamQ23(
+  $input: DeleteNotamQ23Input!
+  $condition: ModelNotamQ23ConditionInput
+) {
+  deleteNotamQ23(input: $input, condition: $condition) {
+    id
+    category
+    code
+    description
+    level
+    icon
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateNotamQ45(
+  $input: CreateNotamQ45Input!
+  $condition: ModelNotamQ45ConditionInput
+) {
+  createNotamQ45(input: $input, condition: $condition) {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateNotamQ45(
+  $input: UpdateNotamQ45Input!
+  $condition: ModelNotamQ45ConditionInput
+) {
+  updateNotamQ45(input: $input, condition: $condition) {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteNotamQ45(
+  $input: DeleteNotamQ45Input!
+  $condition: ModelNotamQ45ConditionInput
+) {
+  deleteNotamQ45(input: $input, condition: $condition) {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateIcaoAbbreviationsCodes(
+  $input: CreateIcaoAbbreviationsCodesInput!
+  $condition: ModelIcaoAbbreviationsCodesConditionInput
+) {
+  createIcaoAbbreviationsCodes(input: $input, condition: $condition) {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateIcaoAbbreviationsCodes(
+  $input: UpdateIcaoAbbreviationsCodesInput!
+  $condition: ModelIcaoAbbreviationsCodesConditionInput
+) {
+  updateIcaoAbbreviationsCodes(input: $input, condition: $condition) {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteIcaoAbbreviationsCodes(
+  $input: DeleteIcaoAbbreviationsCodesInput!
+  $condition: ModelIcaoAbbreviationsCodesConditionInput
+) {
+  deleteIcaoAbbreviationsCodes(input: $input, condition: $condition) {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    nickname
+    firstName
+    lastName
+    idPublic
+    idPrivate
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    nickname
+    firstName
+    lastName
+    idPublic
+    idPrivate
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    nickname
+    firstName
+    lastName
+    idPublic
+    idPrivate
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

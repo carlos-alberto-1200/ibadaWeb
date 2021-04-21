@@ -109,7 +109,7 @@ enum Layover {
   DOMESTIC
   INTERNATIONAL
 }
- 
+
  #ID: YYYYMMDDFLTNFLTFROMTO
  #RELATIONSHIPS: PILOT-DUTY-COUNTRY(from+to)-AIRPORT(from+to)-COMPANY-AC/REG(tenemos acceso tambien al modelo)
 type PrivateLogbook @model  {
@@ -129,7 +129,7 @@ type PrivateLogbook @model  {
   hBlockTime: String
   fCrew: [ID]
   cCrew: [ID]
-  
+
   # app+crew+landings+times.... en JSON o fuera??
 }
 
@@ -165,4 +165,13 @@ type IcaoAbbreviationsCodes @model  {
   id: ID!
   code: String
   description: String
+}
+
+type User @model  {
+  id: ID!
+  nickname: String
+  firstName: String
+  lastName: String
+  idPublic: String
+  idPrivate: String
 }

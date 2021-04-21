@@ -1,0 +1,997 @@
+# this is an auto generated file. This will be overwritten
+query SyncCountries(
+  $filter: ModelCountryFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncCountries(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      createAt
+      createAtTS
+      name
+      iso31661a2
+      iso31661a3
+      iso31661n
+      coordinates
+      continent
+      flagIcon
+      flagSvg
+      domain
+      tzName
+      geoJson
+      landlocked
+      borders
+      area
+      demonyms
+      dialCode
+      wikiLink
+      icaoArpt
+      icaoTail
+      e164
+      ioc
+      e212
+      natoa3
+      natoa2
+      locMarc
+      ituMid
+      itu3a
+      ituPreffix
+      fips
+      plate
+      gs1
+      undp
+      wmo
+      countryWxRH {
+        nextToken
+        startedAt
+      }
+      countryWxR {
+        nextToken
+        startedAt
+      }
+      countryArpt {
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetCountry($id: ID!) {
+  getCountry(id: $id) {
+    id
+    createAt
+    createAtTS
+    name
+    iso31661a2
+    iso31661a3
+    iso31661n
+    coordinates
+    continent
+    flagIcon
+    flagSvg
+    domain
+    tzName
+    geoJson
+    landlocked
+    borders
+    area
+    demonyms
+    dialCode
+    wikiLink
+    icaoArpt
+    icaoTail
+    e164
+    ioc
+    e212
+    natoa3
+    natoa2
+    locMarc
+    ituMid
+    itu3a
+    ituPreffix
+    fips
+    plate
+    gs1
+    undp
+    wmo
+    countryWxRH {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        countryIso31661a2
+        icao
+        faa
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryWxR {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        ttl
+        countryIso31661a2
+        arptCode
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryArpt {
+      items {
+        id
+        createAt
+        createAtTS
+        iso31661a2
+        icao
+        iata
+        faa
+        name
+        city
+        state
+        elevation
+        tz_name
+        coordinates
+        countryID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListCountrys(
+  $filter: ModelCountryFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCountrys(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      createAt
+      createAtTS
+      name
+      iso31661a2
+      iso31661a3
+      iso31661n
+      coordinates
+      continent
+      flagIcon
+      flagSvg
+      domain
+      tzName
+      geoJson
+      landlocked
+      borders
+      area
+      demonyms
+      dialCode
+      wikiLink
+      icaoArpt
+      icaoTail
+      e164
+      ioc
+      e212
+      natoa3
+      natoa2
+      locMarc
+      ituMid
+      itu3a
+      ituPreffix
+      fips
+      plate
+      gs1
+      undp
+      wmo
+      countryWxRH {
+        nextToken
+        startedAt
+      }
+      countryWxR {
+        nextToken
+        startedAt
+      }
+      countryArpt {
+        nextToken
+        startedAt
+      }
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncAirports(
+  $filter: ModelAirportFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncAirports(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      createAt
+      createAtTS
+      iso31661a2
+      icao
+      iata
+      faa
+      name
+      city
+      state
+      elevation
+      tz_name
+      coordinates
+      arptWxRH {
+        nextToken
+        startedAt
+      }
+      arptWxR {
+        nextToken
+        startedAt
+      }
+      countryID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetAirport($id: ID!) {
+  getAirport(id: $id) {
+    id
+    createAt
+    createAtTS
+    iso31661a2
+    icao
+    iata
+    faa
+    name
+    city
+    state
+    elevation
+    tz_name
+    coordinates
+    arptWxRH {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        countryIso31661a2
+        icao
+        faa
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    arptWxR {
+      items {
+        id
+        createAt
+        createAtTS
+        isoDate
+        tsDate
+        ttl
+        countryIso31661a2
+        arptCode
+        reportType
+        raw
+        countryID
+        airportID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    countryID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListAirports(
+  $filter: ModelAirportFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAirports(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      createAt
+      createAtTS
+      iso31661a2
+      icao
+      iata
+      faa
+      name
+      city
+      state
+      elevation
+      tz_name
+      coordinates
+      arptWxRH {
+        nextToken
+        startedAt
+      }
+      arptWxR {
+        nextToken
+        startedAt
+      }
+      countryID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncWxReportHistories(
+  $filter: ModelWxReportHistoryFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncWxReportHistories(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      createAt
+      createAtTS
+      isoDate
+      tsDate
+      countryIso31661a2
+      icao
+      faa
+      reportType
+      raw
+      countryID
+      airportID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetWxReportHistory($id: ID!) {
+  getWxReportHistory(id: $id) {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    countryIso31661a2
+    icao
+    faa
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListWxReportHistorys(
+  $filter: ModelWxReportHistoryFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listWxReportHistorys(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      createAt
+      createAtTS
+      isoDate
+      tsDate
+      countryIso31661a2
+      icao
+      faa
+      reportType
+      raw
+      countryID
+      airportID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncWxReports(
+  $filter: ModelWxReportFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncWxReports(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      createAt
+      createAtTS
+      isoDate
+      tsDate
+      ttl
+      countryIso31661a2
+      arptCode
+      reportType
+      raw
+      countryID
+      airportID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetWxReport($id: ID!) {
+  getWxReport(id: $id) {
+    id
+    createAt
+    createAtTS
+    isoDate
+    tsDate
+    ttl
+    countryIso31661a2
+    arptCode
+    reportType
+    raw
+    countryID
+    airportID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListWxReports(
+  $filter: ModelWxReportFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listWxReports(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      createAt
+      createAtTS
+      isoDate
+      tsDate
+      ttl
+      countryIso31661a2
+      arptCode
+      reportType
+      raw
+      countryID
+      airportID
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncPrivateLogbooks(
+  $filter: ModelPrivateLogbookFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncPrivateLogbooks(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      createAt
+      createAtTS
+      fltDate
+      code
+      nflt
+      dep
+      arr
+      dhd
+      augmented
+      training
+      dBlockTime
+      hBlockTime
+      fCrew
+      cCrew
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetPrivateLogbook($id: ID!) {
+  getPrivateLogbook(id: $id) {
+    id
+    createAt
+    createAtTS
+    fltDate
+    code
+    nflt
+    dep
+    arr
+    dhd
+    augmented
+    training
+    dBlockTime
+    hBlockTime
+    fCrew
+    cCrew
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListPrivateLogbooks(
+  $filter: ModelPrivateLogbookFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPrivateLogbooks(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      createAt
+      createAtTS
+      fltDate
+      code
+      nflt
+      dep
+      arr
+      dhd
+      augmented
+      training
+      dBlockTime
+      hBlockTime
+      fCrew
+      cCrew
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncPilots(
+  $filter: ModelPilotFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncPilots(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      createAt
+      createAtTS
+      fullName
+      name
+      middleName
+      lastName
+      dob
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetPilot($id: ID!) {
+  getPilot(id: $id) {
+    id
+    createAt
+    createAtTS
+    fullName
+    name
+    middleName
+    lastName
+    dob
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListPilots(
+  $filter: ModelPilotFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPilots(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      createAt
+      createAtTS
+      fullName
+      name
+      middleName
+      lastName
+      dob
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncNotamQ23s(
+  $filter: ModelNotamQ23FilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncNotamQ23s(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      category
+      code
+      description
+      level
+      icon
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetNotamQ23($id: ID!) {
+  getNotamQ23(id: $id) {
+    id
+    category
+    code
+    description
+    level
+    icon
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListNotamQ23s(
+  $filter: ModelNotamQ23FilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listNotamQ23s(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      category
+      code
+      description
+      level
+      icon
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncNotamQ45s(
+  $filter: ModelNotamQ45FilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncNotamQ45s(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      code
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetNotamQ45($id: ID!) {
+  getNotamQ45(id: $id) {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListNotamQ45s(
+  $filter: ModelNotamQ45FilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listNotamQ45s(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      code
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncIcaoAbbreviationsCodes(
+  $filter: ModelIcaoAbbreviationsCodesFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncIcaoAbbreviationsCodes(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      code
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetIcaoAbbreviationsCodes($id: ID!) {
+  getIcaoAbbreviationsCodes(id: $id) {
+    id
+    code
+    description
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListIcaoAbbreviationsCodess(
+  $filter: ModelIcaoAbbreviationsCodesFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listIcaoAbbreviationsCodess(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      code
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncUsers(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      nickname
+      firstName
+      lastName
+      idPublic
+      idPrivate
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    nickname
+    firstName
+    lastName
+    idPublic
+    idPrivate
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      nickname
+      firstName
+      lastName
+      idPublic
+      idPrivate
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
