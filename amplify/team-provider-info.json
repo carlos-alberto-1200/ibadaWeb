@@ -27,12 +27,6 @@
     "categories": {
       "auth": {
         "icircle5481d50e": {}
-      },
-      "function": {
-        "kmsGenerate": {
-          "deploymentBucketName": "amplify-icircle-dev-231439-deployment",
-          "s3Key": "amplify-builds/kmsGenerate-76485466735365642b7a-build.zip"
-        }
       }
     }
   }
